@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2046760561
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 4847817712686481240, guid: c5d2827ba488185479a7b7f681bbbb6d,
     type: 3}
@@ -131,8 +131,7 @@ MonoBehaviour:
   strength: 4
   agility: 4
   maxHp: 8
-  move: 4
-  name: Keon
+  name: 
 --- !u!114 &6090270932114957169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,8 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecd6c573618cae41a20dd170b1be85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 0
-  move: 0
+  move: 3
   moveLeft: 0
   x: 0
   y: 0

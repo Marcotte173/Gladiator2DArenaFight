@@ -9,6 +9,7 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space)) CenterCamera();
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
@@ -17,5 +18,10 @@ public class CameraMove : MonoBehaviour
         {
             transform.position -= Vector3.up * speed * Time.deltaTime;
         }
+    }
+
+    void CenterCamera()
+    {
+        transform.position = new Vector3(transform.position.x, GameManager.instance.agents[0].x,-10);
     }
 }

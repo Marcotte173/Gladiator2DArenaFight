@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public bool canMove;
     public int move;
     public int moveLeft;
     public int x;
     public int y;
     void Start()
     {
-        move = GetComponent<Stats>().move;
         x = Convert.ToInt32(transform.position.x);
         y = Convert.ToInt32(transform.position.y);        
     }
