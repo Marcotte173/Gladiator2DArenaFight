@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.D))
             {
                 bool enemy = false;
-                foreach (Move p in AgentInfo.agents)
+                foreach (Move p in GameManager.instance.agents)
                 {
                     if (p.x == GetComponent<Move>().x + 1 && p.y == GetComponent<Move>().y)
                     {
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A))
             {
                 bool enemy = false;
-                foreach (Move p in AgentInfo.agents)
+                foreach (Move p in GameManager.instance.agents)
                 {
                     if (p.x == GetComponent<Move>().x - 1 && p.y == GetComponent<Move>().y)
                     {
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 bool enemy = false;
-                foreach (Move p in AgentInfo.agents)
+                foreach (Move p in GameManager.instance.agents)
                 {
                     if (p.x == GetComponent<Move>().x && p.y == GetComponent<Move>().y + 1)
                     {
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.S))
             {
                 bool enemy = false;
-                foreach (Move p in AgentInfo.agents)
+                foreach (Move p in GameManager.instance.agents)
                 {
 
                     if (p.x == GetComponent<Move>().x && p.y == GetComponent<Move>().y - 1)

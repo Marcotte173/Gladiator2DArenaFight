@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Select : MonoBehaviour
 {
+    public GameObject Character;
     public bool selected;
     bool mouseOver;
     public GameObject particles;
