@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    public bool turn;
     public int move;
     public int moveLeft;
     public int x;

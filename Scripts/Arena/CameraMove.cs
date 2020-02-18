@@ -5,11 +5,16 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public int speed;
+    public static CameraMove instance;
+
+    private void Start()
+    {
+        instance = this;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) CenterCamera();
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
@@ -20,8 +25,13 @@ public class CameraMove : MonoBehaviour
         }
     }
 
-    void CenterCamera()
+    public void CenterCamera()
     {
-        transform.position = new Vector3(transform.position.x, GameManager.instance.agents[0].x,-10);
+        transform.position = new Vector3(0.43f, GameManager.instance.agents[0].y,-10);
+    }
+
+    public void CameraCenter()
+    {
+        transform.position = new Vector3(0.43f, 3.94f, -10);
     }
 }

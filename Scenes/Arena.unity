@@ -424,6 +424,83 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2944595630341841833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1358084933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358084934}
+  - component: {fileID: 1358084936}
+  - component: {fileID: 1358084935}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1358084934
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358084933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1205070479}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -81.7, y: 23.9}
+  m_SizeDelta: {x: 161.3, y: 45.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1358084935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358084933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press Spacebar to end turn
+--- !u!222 &1358084936
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358084933}
+  m_CullTransparentMesh: 0
 --- !u!114 &1367323776 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1536863087889376546, guid: 8411e3af7238e384d9d02fb1f9a79b54,
@@ -1091,6 +1168,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4892290549579698719, guid: 6c7c4e4dffef87a449308481ee48734f,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 5025361586614093807}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7c4e4dffef87a449308481ee48734f, type: 3}
 --- !u!1001 &5025361586614093806
@@ -1103,7 +1185,7 @@ PrefabInstance:
     - target: {fileID: 5025361585449345478, guid: f560854ea1954be4e8e5350c7c787159,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5025361585449345478, guid: f560854ea1954be4e8e5350c7c787159,
         type: 3}
@@ -1170,6 +1252,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.b
       value: 0.05660379
       objectReference: {fileID: 0}
+    - target: {fileID: 5025361585449345481, guid: f560854ea1954be4e8e5350c7c787159,
+        type: 3}
+      propertyPath: orthographic size
+      value: 4.72
+      objectReference: {fileID: 0}
     - target: {fileID: 5025361585449345483, guid: f560854ea1954be4e8e5350c7c787159,
         type: 3}
       propertyPath: m_Name
@@ -1177,3 +1264,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f560854ea1954be4e8e5350c7c787159, type: 3}
+--- !u!20 &5025361586614093807 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5025361585449345481, guid: f560854ea1954be4e8e5350c7c787159,
+    type: 3}
+  m_PrefabInstance: {fileID: 5025361586614093806}
+  m_PrefabAsset: {fileID: 0}

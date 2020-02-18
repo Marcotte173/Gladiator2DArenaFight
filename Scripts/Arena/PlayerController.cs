@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {      
-
     void Update()
-    {        
+    {
         if (Input.GetKeyDown(KeyCode.D) && GetComponent<Move>().moveLeft > 0)
         {
             bool enemy = false;
@@ -64,8 +63,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
             if (enemy == false) GetComponent<Move>().Down();
-        }
-        if (GetComponent<Move>().moveLeft <= 0) GameManager.instance.NewTurn();     
+        }   
     }
 
     private void BasicAttack(Move p)
