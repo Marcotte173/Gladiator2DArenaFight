@@ -19,6 +19,7 @@ public class Assign : MonoBehaviour
         {
             if (GetComponent<Select>().selected)
             {
+                if (nameField.text == "") nameField.text = Names.Return();
                 character.GetComponent<Stats>().name = nameField.text;
                 AgentInfo.agents.Add(character);
                 if (AgentInfo.agents.Count == 1)
@@ -33,7 +34,7 @@ public class Assign : MonoBehaviour
                     next.text = "Press Spacebar to start the match";
                     ready = true;
                 }
-            }
+            }            
         }
         if (ready)
         {
