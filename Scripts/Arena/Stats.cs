@@ -9,5 +9,6 @@ public class Stats : MonoBehaviour
     public int strength;
     public int agility;
     public int maxHp;
+    public int maxEnergy;
     new public string name;
 }

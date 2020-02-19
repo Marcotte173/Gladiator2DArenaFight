@@ -43,3 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f7142ec319d5b45aa29d5482ea71ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agents: []
+  agent1: {fileID: 0}
+  agent2: {fileID: 0}
+  cam: {fileID: 0}
+  turnCounter: {fileID: 0}
+  StartText: {fileID: 0}

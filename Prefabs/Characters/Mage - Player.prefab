@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5450572799707580754}
   - component: {fileID: -3404040340240207332}
   - component: {fileID: 4665481661292735086}
+  - component: {fileID: -2845435753549384374}
   m_Layer: 0
   m_Name: Mage - Player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1029578161
+  m_SortingLayerID: 2046760561
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 6995750527968357485, guid: c5d2827ba488185479a7b7f681bbbb6d,
@@ -133,7 +134,8 @@ MonoBehaviour:
   strength: 3
   agility: 5
   maxHp: 6
-  name: 
+  maxEnergy: 0
+  name: Beuford
 --- !u!114 &1219916224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +207,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b240303258e72c740b0aba0e1e650c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2845435753549384374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452447406452366438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0523ebbdc8d62924aa5cc0bb417fcb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities: 3
+  AbilityObject: {fileID: 0}
 --- !u!1001 &1645902256640213561
 PrefabInstance:
   m_ObjectHideFlags: 0

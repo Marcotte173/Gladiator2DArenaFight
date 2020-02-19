@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 506479359275883648}
   - component: {fileID: 144127497628147836}
   - component: {fileID: -5663329064539754474}
+  - component: {fileID: -1350553147578544556}
   m_Layer: 0
   m_Name: Warrior - Player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1029578161
+  m_SortingLayerID: 2046760561
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4847817712686481240, guid: c5d2827ba488185479a7b7f681bbbb6d,
@@ -133,7 +134,8 @@ MonoBehaviour:
   strength: 4
   agility: 4
   maxHp: 8
-  name: Melvin
+  maxEnergy: 0
+  name: Bryce
 --- !u!114 &6090270932114957169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +207,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b240303258e72c740b0aba0e1e650c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1350553147578544556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997363329384815633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0523ebbdc8d62924aa5cc0bb417fcb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities: 2
+  AbilityObject: {fileID: 0}
 --- !u!1001 &3437176628833354566
 PrefabInstance:
   m_ObjectHideFlags: 0

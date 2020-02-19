@@ -27,11 +27,11 @@ public class CameraMove : MonoBehaviour
 
     public void CenterCamera()
     {
-        transform.position = new Vector3(0.43f, GameManager.instance.agents[0].y,-10);
+        transform.position = new Vector3(-2f, GameManager.instance.agents[0].y,-10);
     }
 
     public void CameraCenter()
     {
-        transform.position = new Vector3(0.43f, 3.94f, -10);
+        transform.position = new Vector3(-2f, 3.94f, -10);
     }
 }

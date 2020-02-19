@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 522404250}
   - component: {fileID: -7584991100930535839}
   - component: {fileID: 8874289482979996023}
+  - component: {fileID: 408363582477352713}
   m_Layer: 0
   m_Name: Orc - Player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1029578161
+  m_SortingLayerID: 2046760561
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2510476293373519475, guid: c5d2827ba488185479a7b7f681bbbb6d,
@@ -132,6 +133,7 @@ MonoBehaviour:
   strength: 7
   agility: 3
   maxHp: 12
+  maxEnergy: 0
   name: 
 --- !u!114 &522404248
 MonoBehaviour:
@@ -204,6 +206,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b240303258e72c740b0aba0e1e650c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &408363582477352713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8542831695908047456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0523ebbdc8d62924aa5cc0bb417fcb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities: 1
+  AbilityObject: {fileID: 0}
 --- !u!1001 &4085384384802872557
 PrefabInstance:
   m_ObjectHideFlags: 0
