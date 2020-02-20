@@ -8,6 +8,8 @@ public class Assign : MonoBehaviour
 {
     public Text glad1;
     public Text glad2;
+    public Text glad3;
+    public Text glad4;
     public Text next;
     public bool ready;
     public string type;
@@ -31,6 +33,27 @@ public class Assign : MonoBehaviour
                 else if (AgentInfo.agents.Count == 2)
                 {
                     glad2.text = $"{nameField.text} the {type}";
+                    nameField.text = "";
+                    if (AgentInfo.players == 2)
+                    {
+                        next.text = "Press Spacebar to start the match";
+                        ready = true;
+                    }
+                }
+                else if (AgentInfo.agents.Count == 3)
+                {
+                    glad3.text = $"{nameField.text} the {type}";
+                    nameField.text = "";
+                    if (AgentInfo.players == 3)
+                    {
+                        next.text = "Press Spacebar to start the match";
+                        ready = true;
+                    }
+                }
+                else if (AgentInfo.agents.Count == 4)
+                {
+                    glad4.text = $"{nameField.text} the {type}";
+                    nameField.text = "";
                     next.text = "Press Spacebar to start the match";
                     ready = true;
                 }

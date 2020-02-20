@@ -17,7 +17,6 @@ public class Health : MonoBehaviour
         if (hp <= 0)
         {
             gameObject.SetActive(false);
-            AgentInfo.agents.Remove(GetComponent<Move>());
         }
     }
 }

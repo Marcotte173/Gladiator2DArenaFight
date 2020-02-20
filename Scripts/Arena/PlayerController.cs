@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
             bool enemy = false;
             foreach (Move p in GameManager.instance.agents)
             {
-                if (p.x == GetComponent<Move>().x + 1 && p.y == GetComponent<Move>().y)
+                if (p.x == GetComponent<Move>().x + 1 && p.y == GetComponent<Move>().y && p.GetComponent<Health>().hp>0)
                 {
                     enemy = true;
                     BasicAttack(p);
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
             bool enemy = false;
             foreach (Move p in GameManager.instance.agents)
             {
-                if (p.x == GetComponent<Move>().x - 1 && p.y == GetComponent<Move>().y)
+                if (p.x == GetComponent<Move>().x - 1 && p.y == GetComponent<Move>().y && p.GetComponent<Health>().hp > 0)
                 {
                     enemy = true;
                     BasicAttack(p);
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
             bool enemy = false;
             foreach (Move p in GameManager.instance.agents)
             {
-                if (p.x == GetComponent<Move>().x && p.y == GetComponent<Move>().y + 1)
+                if (p.x == GetComponent<Move>().x && p.y == GetComponent<Move>().y + 1 && p.GetComponent<Health>().hp > 0)
                 {
                     enemy = true;
                     BasicAttack(p);
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             foreach (Move p in GameManager.instance.agents)
             {
 
-                if (p.x == GetComponent<Move>().x && p.y == GetComponent<Move>().y - 1)
+                if (p.x == GetComponent<Move>().x && p.y == GetComponent<Move>().y - 1 && p.GetComponent<Health>().hp > 0)
                 {
                     enemy = true;
                     BasicAttack(p);

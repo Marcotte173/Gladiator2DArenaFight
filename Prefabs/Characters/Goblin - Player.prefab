@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: -3174029447998619430}
   - component: {fileID: 6137964469489028926}
   - component: {fileID: -4059174087842068914}
-  - component: {fileID: 8435942870999275252}
   m_Layer: 0
   m_Name: Goblin - Player
   m_TagString: Player
@@ -154,8 +153,12 @@ MonoBehaviour:
   strength: 4
   agility: 6
   maxHp: 8
+  abilities:
+  - {fileID: 3416150400190533875, guid: 43ecf67f5e874714babf2770570cb5ef, type: 3}
+  abilityNames:
+  - Flee
   maxEnergy: 0
-  name: 
+  name: Alfred
 --- !u!114 &-2909737058785848505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,20 +230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b240303258e72c740b0aba0e1e650c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8435942870999275252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6420842088808717882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0523ebbdc8d62924aa5cc0bb417fcb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilities: 2
-  AbilityObject: {fileID: 0}
 --- !u!1001 &5134579645262106724
 PrefabInstance:
   m_ObjectHideFlags: 0

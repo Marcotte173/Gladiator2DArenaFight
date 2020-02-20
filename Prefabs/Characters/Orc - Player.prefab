@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 522404250}
   - component: {fileID: -7584991100930535839}
   - component: {fileID: 8874289482979996023}
-  - component: {fileID: 408363582477352713}
   m_Layer: 0
   m_Name: Orc - Player
   m_TagString: Player
@@ -133,7 +132,11 @@ MonoBehaviour:
   strength: 7
   agility: 3
   maxHp: 12
-  maxEnergy: 0
+  abilities:
+  - {fileID: 2623884121805316485, guid: 43ecf67f5e874714babf2770570cb5ef, type: 3}
+  abilityNames:
+  - Charge
+  maxEnergy: 1
   name: 
 --- !u!114 &522404248
 MonoBehaviour:
@@ -206,20 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b240303258e72c740b0aba0e1e650c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &408363582477352713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542831695908047456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0523ebbdc8d62924aa5cc0bb417fcb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilities: 1
-  AbilityObject: {fileID: 0}
 --- !u!1001 &4085384384802872557
 PrefabInstance:
   m_ObjectHideFlags: 0

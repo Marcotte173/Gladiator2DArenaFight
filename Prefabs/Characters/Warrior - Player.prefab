@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 506479359275883648}
   - component: {fileID: 144127497628147836}
   - component: {fileID: -5663329064539754474}
-  - component: {fileID: -1350553147578544556}
   m_Layer: 0
   m_Name: Warrior - Player
   m_TagString: Player
@@ -134,8 +133,14 @@ MonoBehaviour:
   strength: 4
   agility: 4
   maxHp: 8
+  abilities:
+  - {fileID: 4913105042069653882, guid: 43ecf67f5e874714babf2770570cb5ef, type: 3}
+  - {fileID: -330816015089058663, guid: 43ecf67f5e874714babf2770570cb5ef, type: 3}
+  abilityNames:
+  - Cleave
+  - Rend
   maxEnergy: 0
-  name: Bryce
+  name: Don
 --- !u!114 &6090270932114957169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,20 +212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b240303258e72c740b0aba0e1e650c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-1350553147578544556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8997363329384815633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0523ebbdc8d62924aa5cc0bb417fcb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilities: 2
-  AbilityObject: {fileID: 0}
 --- !u!1001 &3437176628833354566
 PrefabInstance:
   m_ObjectHideFlags: 0
